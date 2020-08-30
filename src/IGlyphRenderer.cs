@@ -14,20 +14,26 @@ namespace SpriteFontPlus
 
     public class SpriteBatchGlyphRenderer : IGlyphRenderer
     {
-        private SpriteBatch _batch;
+        public SpriteBatch SpriteBatch { get; set; }
+        
+        private SpriteBatchGlyphRenderer()
+        {
+        }
 
         public SpriteBatchGlyphRenderer(SpriteBatch batch)
         {
-            _batch = batch ?? throw new ArgumentNullException(nameof(batch));
+            SpriteBatch = batch ?? throw new ArgumentNullException(nameof(batch));
         }
 
-        public GraphicsDevice GraphicsDevice => _batch.GraphicsDevice;
+        public GraphicsDevice GraphicsDevice => SpriteBatch.GraphicsDevice;
 
         public void Draw(Texture2D texture, Rectangle destRect, Rectangle sourceRect, Color color, float rotation,
             Vector2 origin,
             SpriteEffects effect, float depth)
         {
-            _batch.Draw(texture, destRect, sourceRect, color, rotation, origin, effect, depth);
+            SpriteBatch.Draw(texture, destRect, sourceRect, color, rotation, origin, effect, depth);
         }
+        
+        public static readonly SpriteBatchGlyphRenderer Instance = new SpriteBatchGlyphRenderer();
     }
 }

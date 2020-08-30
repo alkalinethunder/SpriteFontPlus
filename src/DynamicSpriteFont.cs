@@ -129,7 +129,8 @@ namespace SpriteFontPlus
 
 		public float DrawString(SpriteBatch batch, string text, Vector2 pos, Color color)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, color);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, color);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, string text, Vector2 pos, Color color)
@@ -140,7 +141,8 @@ namespace SpriteFontPlus
 		public float DrawString(SpriteBatch batch, string text, Vector2 pos, Color color, Vector2 scale,
 			float depth = 0f)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, color, scale, depth);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, color, scale, depth);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, string text, Vector2 pos, Color color, Vector2 scale, float depth = 0f)
@@ -156,7 +158,8 @@ namespace SpriteFontPlus
 
 		public float DrawString(SpriteBatch batch, string text, Vector2 pos, Color[] glyphColors)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, glyphColors);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, glyphColors);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, string text, Vector2 pos, Color[] glyphColors)
@@ -167,7 +170,8 @@ namespace SpriteFontPlus
 		public float DrawString(SpriteBatch batch, string text, Vector2 pos, Color[] glyphColors, Vector2 scale,
 			float depth = 0f)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, glyphColors, scale, depth);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, glyphColors, scale, depth);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, string text, Vector2 pos, Color[] glyphColors, Vector2 scale, float depth = 0f)
@@ -183,7 +187,8 @@ namespace SpriteFontPlus
 
 		public float DrawString(SpriteBatch batch, StringBuilder text, Vector2 pos, Color color)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, color);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, color);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, StringBuilder text, Vector2 pos, Color color)
@@ -194,7 +199,8 @@ namespace SpriteFontPlus
 		public float DrawString(SpriteBatch batch, StringBuilder text, Vector2 pos, Color color, Vector2 scale,
 			float depth = 0f)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, color, scale, depth);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, color, scale, depth);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, StringBuilder text, Vector2 pos, Color color, Vector2 scale, float depth = 0f)
@@ -210,7 +216,8 @@ namespace SpriteFontPlus
 
 		public float DrawString(SpriteBatch batch, StringBuilder text, Vector2 pos, Color[] glyphColors)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, glyphColors);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, glyphColors);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, StringBuilder text, Vector2 pos, Color[] glyphColors)
@@ -221,7 +228,8 @@ namespace SpriteFontPlus
 		public float DrawString(SpriteBatch batch, StringBuilder text, Vector2 pos, Color[] glyphColors,
 			Vector2 scale, float depth = 0f)
 		{
-			return DrawString(new SpriteBatchGlyphRenderer(batch), text, pos, glyphColors, scale, depth);
+			SpriteBatchGlyphRenderer.Instance.SpriteBatch = batch;
+			return DrawString(SpriteBatchGlyphRenderer.Instance, text, pos, glyphColors, scale, depth);
 		}
 		
 		public float DrawString(IGlyphRenderer batch, StringBuilder text, Vector2 pos, Color[] glyphColors, Vector2 scale, float depth = 0f)

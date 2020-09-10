@@ -1,7 +1,7 @@
-﻿using Microsoft.Xna.Framework;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 
-namespace FontStashSharp
+namespace SpriteFontPlus.FontStashSharp
 {
 	internal class FontGlyph
 	{

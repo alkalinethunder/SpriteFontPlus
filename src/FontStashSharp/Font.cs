@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using static StbTrueTypeSharp.StbTrueType;
 
-namespace FontStashSharp
+namespace SpriteFontPlus.FontStashSharp
 {
 	internal unsafe class Font: IDisposable
 	{

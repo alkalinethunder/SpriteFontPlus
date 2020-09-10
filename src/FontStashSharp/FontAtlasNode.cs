@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace FontStashSharp
+namespace SpriteFontPlus.FontStashSharp
 {
 	[StructLayout(LayoutKind.Sequential)]
 	internal struct FontAtlasNode

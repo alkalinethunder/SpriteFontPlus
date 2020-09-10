@@ -1,4 +1,4 @@
-﻿namespace FontStashSharp
+﻿namespace SpriteFontPlus.FontStashSharp
 {
 	internal struct Bounds
 	{
